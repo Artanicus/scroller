@@ -6,8 +6,8 @@ Restart=always
 RestartSec=60s
 User=pi
 Group=users
-WorkingDirectory=/home/pi/scroll.git/
-ExecStart=/usr/bin/python3 /home/pi/scroll.git/scroll.py
+WorkingDirectory=/home/pi/scroller.git/
+ExecStart=/usr/bin/python3 /home/pi/scroller.git/scroller.py
 Restart=always
 
 [Install]
