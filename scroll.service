@@ -1,0 +1,14 @@
+[Unit]
+Description=Generic Scroller Service
+
+[Service]
+Restart=always
+RestartSec=60s
+User=pi
+Group=users
+WorkingDirectory=/home/pi/scroll.git/
+ExecStart=/usr/bin/python3 /home/pi/scroll.git/scroll.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
